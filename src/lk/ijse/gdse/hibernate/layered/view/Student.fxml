@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hibernate.layered.controller.StudentController">
+   <children>
+      <Label alignment="CENTER" layoutX="745.0" layoutY="39.0" prefHeight="75.0" prefWidth="416.0" text="Student Form..." textFill="#a81212">
+         <font>
+            <Font name="Baskerville Old Face" size="64.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="452.0" layoutY="300.0" prefHeight="59.0" prefWidth="409.0" promptText="Student-Name" />
+      <TextField fx:id="txtContact" layoutX="452.0" layoutY="435.0" prefHeight="59.0" prefWidth="409.0" promptText="Contact" />
+      <TextField fx:id="txtAddress" layoutX="1071.0" layoutY="300.0" prefHeight="59.0" prefWidth="409.0" promptText="Address" />
+      <RadioButton fx:id="rbmEmail" layoutX="1263.0" layoutY="456.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" text="Femail">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbnMale" layoutX="1091.0" layoutY="456.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" text="Male" toggleGroup="$gender">
+         <font>
+            <Font size="30.0" />
+         </font></RadioButton>
+      <Button layoutX="452.0" layoutY="555.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="93.0" prefWidth="409.0" style="-fx-background-color: #4236c3;" text="Save" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblStudent" layoutX="452.0" layoutY="739.0" prefHeight="275.0" prefWidth="1067.0">
+        <columns>
+          <TableColumn fx:id="clmId" prefWidth="91.0" text="ID" />
+          <TableColumn fx:id="clmName" prefWidth="184.0" text="Name" />
+            <TableColumn fx:id="clmAddress" prefWidth="215.0" text="Address" />
+            <TableColumn fx:id="clmContact" prefWidth="194.0" text="Contact" />
+            <TableColumn fx:id="clmGender" prefWidth="175.0" text="Gender" />
+            <TableColumn fx:id="clmRejDate" prefWidth="207.0" text="Rej-Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="1345.0" layoutY="555.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="93.0" prefWidth="409.0" style="-fx-background-color: #e12a2a;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="902.0" layoutY="555.0" mnemonicParsing="false" onAction="#updateOnActiion" prefHeight="93.0" prefWidth="409.0" style="-fx-background-color: #ffed64;" text="Update" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbName" layoutX="452.0" layoutY="144.0" onAction="#nameOnAction" prefHeight="25.0" prefWidth="324.0" promptText="Student Names" />
+      <ComboBox fx:id="cmdStudentId2" layoutX="1071.0" layoutY="144.0" onAction="#idOnAction" prefHeight="25.0" prefWidth="379.0" promptText="Student ID" />
+      <Button layoutX="44.0" layoutY="293.0" mnemonicParsing="false" onAction="#roomFOrnOnAction" prefHeight="86.0" prefWidth="341.0" text="Room Form" />
+      <Button layoutX="44.0" layoutY="422.0" mnemonicParsing="false" onAction="#studentFormOnAction" prefHeight="86.0" prefWidth="341.0" text="Student Form" />
+      <Button layoutX="44.0" layoutY="569.0" mnemonicParsing="false" onAction="#reservationOnAction" prefHeight="86.0" prefWidth="341.0" text="Reservation Form" />
+
+            <ImageView layoutX="69.0" layoutY="304.0">
+         <image>
+            <Image url="@../assets/icons8-room-64.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="69.0" layoutY="433.0">
+         <image>
+            <Image url="@../assets/icons8-student-64.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="65.0" layoutY="576.0">
+         <image>
+            <Image url="@../assets/icons8-reservation-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblName" layoutX="452.0" layoutY="370.0" prefHeight="18.0" prefWidth="171.0" textFill="RED" />
+      <Label fx:id="lblAddress" layoutX="1076.0" layoutY="370.0" prefHeight="18.0" prefWidth="171.0" textFill="RED" />
+      <Label fx:id="lblContact" layoutX="452.0" layoutY="499.0" prefHeight="18.0" prefWidth="171.0" textFill="RED" />
+      <Label fx:id="lblGender" layoutX="1087.0" layoutY="517.0" prefHeight="18.0" prefWidth="220.0" textFill="RED" />
+      
+   </children>
+</AnchorPane>

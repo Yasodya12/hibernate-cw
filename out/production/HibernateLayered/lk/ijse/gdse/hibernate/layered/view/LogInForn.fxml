@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hibernate.layered.controller.LogInFornController">
+   <children>
+      <Label layoutX="330.0" layoutY="102.0" prefHeight="30.0" prefWidth="120.0" text="Welcome !" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="300.0" layoutY="140.0" prefHeight="38.0" prefWidth="198.0" promptText="User-Name" />
+      <PasswordField fx:id="txtPasswordPw" layoutX="300.0" layoutY="218.0" onKeyTyped="#pwTypeOnAction" prefHeight="38.0" prefWidth="198.0" promptText="Password" />
+      <TextField fx:id="txtPasswordTxt" layoutX="300.0" layoutY="218.0" prefHeight="38.0" prefWidth="198.0" promptText="Password" />
+      <Button layoutX="336.0" layoutY="322.0" mnemonicParsing="false" onAction="#btnLogIn" prefHeight="38.0" prefWidth="151.0" style="-fx-background-color: #0622d7;" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="checkBOX" layoutX="300.0" layoutY="270.0" mnemonicParsing="false" onAction="#checkBxShowPw" prefHeight="17.0" prefWidth="112.0" text="Show Password" />
+      <Label layoutX="313.0" layoutY="50.0" prefHeight="38.0" prefWidth="173.0" text="Log-In Form" textFill="#0701b2">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="28.0" prefHeight="44.0" prefWidth="84.0" text="D-24" textAlignment="CENTER" textFill="#da2e2e">
+         <font>
+            <Font name="Eras Bold ITC" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="80.0" prefHeight="44.0" prefWidth="112.0" text="Hostal" textAlignment="CENTER" textFill="#da2e2e">
+         <font>
+            <Font name="Eras Bold ITC" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="280.0" fitWidth="290.0" layoutY="119.0">
+         <image>
+            <Image url="@../assets/vector-isometric-hostel-building-icon-representing-small-68637719.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="367.0" layoutY="368.0" mnemonicParsing="false" onAction="#signUpOnAction" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: FFFFF;" text="Sign Up" textFill="#0701b2" />
+      <Label fx:id="lblUserName" layoutX="334.0" layoutY="180.0" prefHeight="17.0" prefWidth="165.0" textFill="RED" />
+      <Label fx:id="lblPassword" layoutX="333.0" layoutY="256.0" prefHeight="17.0" prefWidth="165.0" textFill="RED" />
+   </children>
+</AnchorPane>
