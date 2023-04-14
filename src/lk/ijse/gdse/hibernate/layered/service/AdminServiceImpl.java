@@ -58,7 +58,7 @@ public class AdminServiceImpl implements AdminService{
             List<Admin> check = adminRepositry.check(usename, password);
 
             if(check.iterator().hasNext()){
-                System.out.println("if athule "+check);
+
                 return true;
             }
             return false;
@@ -67,6 +67,13 @@ public class AdminServiceImpl implements AdminService{
             session.close();
             return false;
         }
+    }
+    @Override
+    public boolean reserPw(String userName, String pw){
+        session=SessionFactoryConfig.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+        adminRepositry.setSession(session);
+      return  adminRepositry.reserPw(userName,pw);
     }
 
 }

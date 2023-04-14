@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface AdminRepositry extends CrudRepositry<Admin, Long> {
      List<Admin> check(String userName, String password);
+     public boolean reserPw(String userName, String pw);
 }

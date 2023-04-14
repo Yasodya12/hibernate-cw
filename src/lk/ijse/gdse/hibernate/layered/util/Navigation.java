@@ -41,6 +41,10 @@ private static AnchorPane pane;
                 window.setTitle("Sanasa Bank Managment Add Member");
                 window.setFullScreen(true);
                 initUI("Student.fxml");
+            case  NewPassword:
+                window.setTitle("Sanasa Bank Managment Add Member");
+                window.setFullScreen(true);
+                initUI("ResetPassword.fxml");
                 break;
 
             default:

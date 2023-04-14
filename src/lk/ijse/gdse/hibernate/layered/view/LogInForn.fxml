@@ -49,5 +49,6 @@
       <Button layoutX="367.0" layoutY="368.0" mnemonicParsing="false" onAction="#signUpOnAction" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: FFFFF;" text="Sign Up" textFill="#0701b2" />
       <Label fx:id="lblUserName" layoutX="334.0" layoutY="180.0" prefHeight="17.0" prefWidth="165.0" textFill="RED" />
       <Label fx:id="lblPassword" layoutX="333.0" layoutY="256.0" prefHeight="17.0" prefWidth="165.0" textFill="RED" />
+      <Button layoutX="442.0" layoutY="268.0" mnemonicParsing="false" onAction="#reserPwOnAction" text="Reset Password" underline="true" />
    </children>
 </AnchorPane>

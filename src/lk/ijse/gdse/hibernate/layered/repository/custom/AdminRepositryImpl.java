@@ -40,8 +40,15 @@ public class AdminRepositryImpl implements AdminRepositry{
 
         return admin;
     }
-
-
+    @Override
+    public boolean reserPw(String userName, String pw){
+        String sqlQuery="update Admin a set a.password=:userName where a.userName=:userName ";
+        Query query = session.createQuery(sqlQuery);
+        query.setParameter("userName",pw);
+        query.setParameter("userName",userName);
+        int count = query.executeUpdate();
+        return count >= 0;
+    }
     @Override
     public Long save(Admin admin) {
         return (long) session.save(admin);

@@ -88,11 +88,14 @@ public class LogInFornController implements Initializable {
         txtPasswordPw.setVisible(true);
         txtPasswordTxt.setVisible(false);
     }
-//    AdminServiceImpl adminService = AdminServiceImpl.getInstance();
 
     public void signUpOnAction(ActionEvent actionEvent) throws IOException {
 
         Navigation.navigate(Routes.SignUp, pane);
-        System.out.println("ebuna");
+
+    }
+
+    public void reserPwOnAction(ActionEvent actionEvent) throws IOException {
+        Navigation.navigate(Routes.NewPassword,pane);
     }
 }
