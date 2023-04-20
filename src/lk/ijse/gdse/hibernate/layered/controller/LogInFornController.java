@@ -21,6 +21,7 @@ public class LogInFornController implements Initializable {
 
     public CheckBox checkBOX;
     public TextField txtUserName;
+
     public AnchorPane pane;
     public Label lblUserName;
     public Label lblPassword;
@@ -48,12 +49,11 @@ public class LogInFornController implements Initializable {
            if(checkBOX.isSelected()){
 
                password= txtPasswordTxt.getText();
-               return;
            }else {
                password=txtPasswordPw.getText();
            }
 
-           check = adminService.check(txtUserName.getText(), txtPasswordPw.getText());
+           check = adminService.check(txtUserName.getText(), password);
 
            if(check){
                Navigation.navigate(Routes.Rooms, pane);

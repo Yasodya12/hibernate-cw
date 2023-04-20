@@ -8,7 +8,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import lk.ijse.gdse.hibernate.layered.dto.AdminDTO;
 import lk.ijse.gdse.hibernate.layered.service.AdminServiceImpl;
 import lk.ijse.gdse.hibernate.layered.service.ServiceFactory;
 import lk.ijse.gdse.hibernate.layered.util.Navigation;

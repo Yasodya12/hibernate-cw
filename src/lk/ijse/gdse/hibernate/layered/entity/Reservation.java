@@ -9,7 +9,7 @@ import java.sql.Timestamp;
 @Entity
 public class Reservation {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long res_id;
     @CreationTimestamp
     private Timestamp date;

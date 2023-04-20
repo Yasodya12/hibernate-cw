@@ -18,32 +18,33 @@ private static AnchorPane pane;
         switch (route) {
 
             case  Reservation:
-                window.setTitle("Sanasa Bank Managment");
+                window.setTitle("D-24 Hostal");
                 initUI("ReserveRoom.fxml");
                 window.setFullScreen(true);
                 break;
             case Rooms:
-                window.setTitle("Sanasa Bank Managment Sign Up");
+                window.setTitle("D-24 Hostal");
                 window.setFullScreen(true);
                 initUI("Room.fxml");
                 break;
             case SignUp:
-                window.setTitle("Sanasa Bank Managment Add Member");
+                window.setTitle("D-24 Hostal");
                 window.setFullScreen(false);
                 initUI("SignUpForm.fxml");
                 break;
             case Login:
-                window.setTitle("Sanasa Bank Managment Add Member");
+                window.setTitle("D-24 Hostal");
                 window.setFullScreen(false);
                 initUI("LogInForn.fxml");
                 break;
             case Student:
-                window.setTitle("Sanasa Bank Managment Add Member");
+                window.setTitle("D-24 Hostal");
                 window.setFullScreen(true);
                 initUI("Student.fxml");
+                break;
             case  NewPassword:
-                window.setTitle("Sanasa Bank Managment Add Member");
-                window.setFullScreen(true);
+                window.setTitle("D-24 Hostal");
+                window.setFullScreen(false);
                 initUI("ResetPassword.fxml");
                 break;
 

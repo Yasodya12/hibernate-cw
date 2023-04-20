@@ -41,6 +41,7 @@ public class StudentController implements Initializable {
     public TableColumn clmContact;
     public ComboBox cmbName;
     public ComboBox cmdStudentId2;
+
     public AnchorPane pane;
     public Label lblName;
     public Label lblAddress;

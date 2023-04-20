@@ -21,7 +21,7 @@ public class RepositryFactory {
         Student,Rooms,Reservation,Admin,Query
     }
 
-    public Object getRepositry(RepTypes types){
+    public SuperRepositry getRepositry(RepTypes types){
         switch (types) {
             case Student:
                 return new StudentRepositryImpl();
